@@ -83,6 +83,7 @@ function SecretRecovery({ componentOrigin }: { componentOrigin: string }) {
                   privateKey: priv,
                   privKeyArr: privateKey,
                   tokens: [],
+                  delete: false,
                 };
 
                 setMintWall(mintWall);
