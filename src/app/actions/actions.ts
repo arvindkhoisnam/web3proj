@@ -59,9 +59,8 @@ export async function createWalletFromPrivateKey(privateKey: string) {
 }
 
 export async function airdropSol(publicKey: string, amount: number) {
-  const alchemyRpcUrl = URL;
-  // const connection = new Connection(alchemyRpcUrl, "confirmed");
-  const connection = new Connection(clusterApiUrl("devnet"));
+  const connection = new Connection(URL!, "confirmed");
+  // const connection = new Connection(clusterApiUrl("devnet"));
   await new Promise((res) => {
     return setTimeout(() => {
       res("15 secs timer");
